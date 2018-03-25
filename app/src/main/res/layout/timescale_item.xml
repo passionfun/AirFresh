@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal" >
+
+    <ImageView
+    	android:id="@+id/iv_icon_timescale"
+    	android:layout_width="0dp"
+    	android:layout_weight="1"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:src="@drawable/timescale_item_off" />
+
+    <TextView
+    	android:id="@+id/tv_id_timescale"
+    	android:layout_width="0dp"
+    	android:layout_weight="1"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:textSize="20sp"
+    	android:text="@string/sector1" />
+
+    <LinearLayout
+    	android:layout_width="0dp"
+    	android:layout_weight="2"
+    	android:layout_height="wrap_content"
+    	android:layout_gravity="center"
+    	android:orientation="vertical" >
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" >
+
+            <TextView
+            	android:id="@+id/tv_start_stop_timescale"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:text="08:00~09:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content" >
+
+            <TextView
+            	android:id="@+id/tv_work_timescale"
+            	android:layout_width="0dp"
+    			android:layout_weight="1"
+            	android:layout_height="wrap_content"
+            	android:text="@string/work_time" />
+
+            <TextView
+            	android:id="@+id/tv_rest_timescale"
+            	android:layout_width="0dp"
+    			android:layout_weight="1"
+            	android:layout_height="wrap_content"
+            	android:text="@string/rest_time" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<FrameLayout
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_centerHorizontal="true"
+		android:layout_above="@+id/tabs" >
+	</FrameLayout>
+
+	<RadioGroup
+		android:id="@+id/tabs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+		android:background="@color/tabs_background"
+		android:gravity="center_vertical"
+		android:orientation="horizontal" >
+
+		<RadioButton
+			android:id="@+id/tab1"
+			style="@style/TabStyle"
+			android:checked="true"
+			android:drawableTop="@drawable/drawable_tab1_background"
+			android:text="@string/tab1" />
+
+		<RadioButton
+			android:id="@+id/tab2"
+			style="@style/TabStyle"
+			android:drawableTop="@drawable/drawable_tab2_background"
+			android:text="@string/tab2" />
+
+		<RadioButton
+			android:id="@+id/tab3"
+			style="@style/TabStyle"
+			android:drawableTop="@drawable/drawable_tab3_background"
+			android:text="@string/tab3" />
+
+		<RadioButton
+			android:id="@+id/tab4"
+			style="@style/TabStyle"
+			android:drawableTop="@drawable/drawable_tab4_background"
+			android:text="@string/tab4" />
+	</RadioGroup>
+
+</RelativeLayout>

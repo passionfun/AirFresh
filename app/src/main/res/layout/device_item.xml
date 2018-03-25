@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+	android:orientation="vertical" >
+
+    <TextView
+    	android:id="@+id/divider1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"/>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+
+        <TextView
+        	android:id="@+id/tv_dname"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:text="设备52-4E"
+			android:maxEms="11"
+			android:singleLine="true"
+			android:ellipsize="end"
+			android:textColor="#666666"
+        	android:textSize="20sp"
+        	android:typeface="monospace" />
+
+        <TextView
+        	android:id="@+id/tv_device_isonline"
+        	android:layout_width="0dp"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textColor="#666666"
+        	android:textSize="20sp"
+			android:gravity="center"
+        	android:text="离线"
+        	android:typeface="monospace"/>
+
+    </LinearLayout>
+
+    <TextView
+    	android:id="@+id/divider2"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" />
+
+</LinearLayout>

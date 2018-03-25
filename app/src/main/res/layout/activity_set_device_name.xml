@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.SetDeviceNameActivity" >
+
+    <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+    	android:id="@+id/titleBar_setDevice_name"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="20dp"
+    	android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:orientation="vertical" >
+    	
+    	<EditText
+	    	android:id="@+id/et_new_device_name"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:background="@drawable/suggest_input"
+	    	android:ems="10"
+	    	android:singleLine="true" >
+	
+	    	<requestFocus />
+	    </EditText>
+
+    	<TextView
+    		android:id="@+id/tv_device_location"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="20dp"
+    		android:textSize="20sp"
+    		android:typeface="monospace"
+    		android:text="@string/device_location" />
+
+    	<TextView
+    		android:id="@+id/tv_set_location"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:textSize="18sp"
+    		android:typeface="monospace"
+    		android:hint="还未进行位置描述" />
+    
+    </LinearLayout>
+
+		<Button
+		    android:id="@+id/btn_confirms"
+		    android:layout_width="match_parent"
+		    android:layout_height="60dp"
+		    android:layout_marginTop="20dp"
+		    android:background="@drawable/background_button_style4"
+		    android:text="@string/btn_confirm"
+		    android:textColor="#ffffff"
+	    	android:layout_marginLeft="22dp"
+	    	android:layout_marginRight="22dp"
+		    android:textSize="20sp"
+		    android:typeface="monospace" />
+
+</LinearLayout>

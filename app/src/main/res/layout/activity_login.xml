@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#dddddd" >
+
+	<ImageView
+		android:id="@+id/iv_bonfeel"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_weight="3"
+		android:src="@drawable/bonfeel_login" />
+
+	<LinearLayout
+		android:id="@+id/login_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+
+		<RelativeLayout
+			android:id="@+id/user_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff" >
+
+			<ImageView
+				android:id="@+id/iv_user"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/user" />
+			<!-- 18868179232,18868172202,13735518913 -->
+			<EditText
+				android:id="@+id/et_name"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"
+				android:layout_toRightOf="@+id/iv_user"
+				android:background="#ffffff"
+				android:ems="10"
+				android:text=""
+				android:hint="请输入手机号" >
+
+				<requestFocus />
+			</EditText>
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:background="#dddddd" >
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/password_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff" >
+
+			<ImageView
+				android:id="@+id/iv_psd"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"
+				android:src="@drawable/password" />
+
+			<EditText
+				android:id="@+id/et_code"
+				android:layout_width="wrap_content"
+				android:layout_height="45dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="10dp"
+				android:layout_toRightOf="@+id/iv_psd"
+				android:background="#ffffff"
+				android:ems="10"
+				android:inputType="textPassword"
+				android:text=""
+				android:hint="请输入密码" />
+		</RelativeLayout>
+		<RelativeLayout
+		    android:layout_marginTop="5dp"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+			<CheckBox
+			    android:id="@+id/cb_autoLogin"
+			    android:layout_width="wrap_content"
+			    android:layout_height="45dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentTop="true"
+			    style="@style/LoginStyle"
+			    android:typeface="monospace"
+			    android:text="@string/autoLogin" />
+
+			<CheckBox
+			    android:id="@+id/cb_rememberPwd"
+			    android:layout_width="wrap_content"
+			    android:layout_height="45dp"
+			    style="@style/LoginStyle"
+			    android:typeface="monospace"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:text="@string/rememberPwd" />
+
+		</RelativeLayout>
+		
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/btn_login"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:layout_marginLeft="40dp"
+		android:layout_marginRight="40dp"
+		android:text="@string/btn_login"
+		android:layout_weight="1"
+		android:typeface="monospace"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:textStyle="bold"
+		android:background="@drawable/background_button_style4" />
+
+	<LinearLayout
+		android:id="@+id/text_layout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="5"
+		android:orientation="horizontal" >
+
+		<TextView
+			android:id="@+id/tv_forget_psd"
+			style="@style/LoginStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/forget_password" />
+
+		<TextView
+			android:id="@+id/tv_sign_up"
+			style="@style/LoginStyle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:text="@string/sign_up" />
+	</LinearLayout>
+
+	<TextView
+	    android:id="@+id/tv_bonfeel_company"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0.5"
+	    android:gravity="center"
+	    android:typeface="monospace"
+	    android:text="@string/bonfeel_company" />
+
+</LinearLayout>

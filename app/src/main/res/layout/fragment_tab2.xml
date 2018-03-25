@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#eeeeee"
+	android:orientation="vertical" >
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_margin="10dp"
+    	android:orientation="horizontal" >
+
+        <TextView
+        	android:id="@+id/tv_easy_control"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="wrap_content"
+        	android:textSize="20sp"
+        	android:text="@string/easy_control"
+        	android:typeface="monospace"
+        	android:layout_gravity="center" />
+
+        <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.SwitchButton
+        	android:id="@+id/sb_easy_control"
+        	android:layout_width="0dp"
+        	android:layout_weight="1"
+        	android:layout_height="50dp"
+        	android:layout_gravity="center">
+		</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.SwitchButton>
+
+        <ImageView
+            android:id="@+id/iv_delete_scene"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/delete" />
+
+    </LinearLayout>
+
+    <TextView
+    	android:id="@+id/divider1"
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:background="#dddddd" />
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+
+        <TextView
+        	android:id="@+id/spinder1"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:textColor="#cccccc" />
+
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingTop="6dp"
+        	android:paddingBottom="6dp"
+        	android:orientation="horizontal"
+        	android:background="#e0c37d"
+        	android:visibility="gone" >
+
+            <RelativeLayout
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent" >
+
+                <TextView
+                	android:id="@+id/tv_scene_list"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:layout_alignParentLeft="true"
+                	android:layout_centerVertical="true"
+                	android:text="@string/scene_list"
+                	android:layout_marginLeft="10dp"
+                	android:textSize="20sp" 
+                	android:textColor="#ffffff"/>           
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <GridView
+        	android:id="@+id/gv_scenes"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:numColumns="2" 
+        	android:gravity="center"
+        	android:verticalSpacing="2dp"
+        	android:horizontalSpacing="2dp"
+        	android:layout_margin="8dp">
+        </GridView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+    <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+    	android:id="@+id/titleBar_set_province"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_centerHorizontal="true" >
+    </com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+    <ListView
+    	android:id="@+id/lv_province"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/titleBar_set_province"
+    	android:layout_centerHorizontal="true" >
+    </ListView>
+
+</RelativeLayout>

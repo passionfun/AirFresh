@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.SignUpActivity" >
+
+	<com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+		android:id="@+id/titleBar_signup"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true" >
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/titleBar_signup"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:layout_gravity="center"
+			android:layout_marginTop="20dp"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:id="@+id/tv_count"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="16sp"
+					android:text="@string/user_name" />
+
+				<EditText
+					android:id="@+id/et_count"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:hint="@string/user_hint"
+					android:inputType="number"
+					android:text=""
+					android:textSize="16sp"
+					android:ems="11" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:id="@+id/tv_email"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="16sp"
+					android:text="@string/e_mail" />
+
+				<EditText
+					android:id="@+id/et_email"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:hint="@string/hint_email"
+					android:inputType="textEmailAddress"
+					android:text=""
+					android:textSize="16sp"
+					android:ems="11" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+
+				<TextView
+					android:id="@+id/tv_password"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="16sp"
+					android:text="@string/user_code" />
+
+				<EditText
+					android:id="@+id/et_password"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:ems="10"
+					android:hint="@string/code_hint"
+					android:text=""
+					android:textSize="16sp"
+					android:inputType="textPassword" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" >
+
+				<TextView
+					android:id="@+id/tv_psd_confirm"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="16sp"
+					android:text="@string/code_confirm" />
+
+				<EditText
+					android:id="@+id/et_psd_confirm"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="3"
+					android:ems="10"
+					android:hint="@string/code_confirm_hint"
+					android:text=""
+					android:textSize="16sp"
+					android:inputType="textPassword" />
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_confirm"
+				android:layout_width="match_parent"
+				android:layout_height="60dp"
+				android:layout_marginTop="20dp"
+				android:textSize="20sp"
+				android:background="@drawable/background_button_style4"
+				android:textColor="#ffffff"
+				android:typeface="monospace"
+				android:text="@string/button_sign" />
+		</LinearLayout>
+		
+	</LinearLayout>
+
+</RelativeLayout>

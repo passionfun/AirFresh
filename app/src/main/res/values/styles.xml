@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+	-->
+	<style name="AppBaseTheme" parent="android:Theme.Light">
+		<!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+		-->
+	</style>
+
+	<!-- Application theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+	</style>
+	
+	<!-- tab标签主题 -->
+	<style name="TabStyle">
+		<item name="android:background">#eeeeee</item>
+		<item name="android:textSize">@dimen/tab_textSize</item>
+		<item name="android:textColor">@color/tab_textColor</item>
+		<item name="android:layout_marginTop">4dp</item>
+		<item name="android:layout_marginBottom">4dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:button">@null</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:layout_width">@dimen/tab_layout_width</item>
+		<item name="android:layout_height">@dimen/tab_layout_height</item>
+		<item name="android:layout_weight">1.0</item>
+	</style>
+	<!-- 登录界面主题 -->
+	<style name="LoginStyle">
+		<item name="android:textColor">#777777</item>
+		<item name="android:textSize">20sp</item>
+	</style>
+	<!-- 设置界面主题 -->
+	<style name="SetStyle">
+		<item name="android:textSize">20sp</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_weight">1</item>
+	</style>
+	<!-- 软件字体 -->
+
+	 <!-- 自定义Dialog的主题 -->
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+    	<item name="android:windowFrame">@null</item>
+    	<item name="android:windowNoTitle">true</item>
+    	 <item name="android:windowBackground">@android:color/transparent</item>
+    	 <item name="android:windowIsFloating">true</item>
+    	 <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

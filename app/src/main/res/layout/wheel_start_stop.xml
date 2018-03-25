@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal" >
+
+    <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.WheelView
+    	android:id="@+id/wheelView_hour"
+    	android:layout_width="0dp"
+    	android:layout_weight="1"
+    	android:layout_height="wrap_content">
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.WheelView>
+
+    <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.WheelView
+    	android:id="@+id/wheelView_minite"
+    	android:layout_width="0dp"
+    	android:layout_weight="1"
+    	android:layout_height="wrap_content">
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.WheelView>
+
+</LinearLayout>

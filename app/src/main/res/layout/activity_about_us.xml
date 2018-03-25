@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#f3f2f2"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.AboutUsActivity" >
+
+	<com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+		android:id="@+id/titleBar_about_us"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+	<LinearLayout
+		android:id="@+id/layout_icon"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="2"
+		android:background="@drawable/tab4_logo_bg"
+		android:orientation="vertical" >
+
+		<ImageView
+			android:id="@+id/iv_soft_icon"
+			android:layout_width="72dp"
+			android:layout_height="72dp"
+			android:layout_gravity="center"
+			android:src="@drawable/soft_ware" />
+
+		<TextView
+			android:id="@+id/tv_soft_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/soft_name"
+			android:textSize="18sp"
+			android:typeface="monospace" />
+
+		<TextView
+			android:id="@+id/tv_soft_version"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:text="@string/soft_version"
+			android:textSize="18sp"
+			android:typeface="monospace" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/layout_function"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="3"
+		android:orientation="vertical"
+		android:background="@drawable/tab4_item_bg" >
+
+		<LinearLayout
+			android:id="@+id/layout_welcome"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+
+			<TextView
+				android:id="@+id/tv_welcome"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/welcome_page"
+				android:textSize="15sp"
+				android:layout_gravity="center" />
+
+		</LinearLayout>
+		
+		<TextView
+        	android:id="@+id/divider1"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="#dddddd" />
+		
+		<LinearLayout
+			android:id="@+id/layout_func"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+
+			<TextView
+				android:id="@+id/tv_func"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/func"
+				android:textSize="15sp"
+				android:layout_gravity="center" />
+
+		</LinearLayout>
+		
+		<TextView
+        	android:id="@+id/divider2"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="#dddddd" />
+		
+		<LinearLayout
+			android:id="@+id/layout_develope_group"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+
+			<TextView
+				android:id="@+id/tv_develope_group"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/develope_group"
+				android:textSize="15sp"
+				android:layout_gravity="center" />
+
+		</LinearLayout>
+
+		<TextView
+        	android:id="@+id/divider3"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="#dddddd" />
+		
+		<LinearLayout
+			android:id="@+id/layout_check_version"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+
+			<TextView
+				android:id="@+id/tv_check_version"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/check_version"
+				android:textSize="15sp"
+				android:layout_gravity="center" />
+
+		</LinearLayout>
+		
+		<!-- <TextView
+        	android:id="@+id/divider4"
+        	android:layout_width="match_parent"
+        	android:layout_height="1dp"
+        	android:background="#dddddd" />
+		
+		<LinearLayout
+			android:id="@+id/layout_exit_system"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+
+			<TextView
+				android:id="@+id/tv_exit_system"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/exit_system"
+				android:textSize="15sp"
+				android:layout_gravity="center" />
+
+		</LinearLayout>
+ -->
+	</LinearLayout>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" >
+
+		<TextView
+			android:id="@+id/tv_bonfeel_company"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="10dp"
+			android:text="@string/bonfeel_company" />
+
+	</RelativeLayout>
+
+</LinearLayout>

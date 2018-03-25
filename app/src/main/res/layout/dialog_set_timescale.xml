@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<Button
+		android:id="@+id/btn_set_timescale"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:textSize="20sp"
+		android:background="@drawable/background_button"
+		android:text="设置" />
+
+	<Button
+		android:id="@+id/btn_delete_timescale"
+		android:layout_width="match_parent"
+		android:layout_height="100dp"
+		android:layout_alignParentLeft="true"
+		android:layout_below="@+id/btn_set_timescale"
+		android:layout_marginTop="20dp"
+		android:textSize="20sp"
+		android:background="@drawable/background_button"
+		android:text="删除" />
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.NewFuncActivity" >
+
+    <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+    	android:id="@+id/titleBar_new_function"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_centerHorizontal="true">
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+    <TextView
+    	android:id="@+id/tv_new_func"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:layout_below="@+id/titleBar_new_function"
+    	android:textSize="18sp"
+    	android:textStyle="bold"
+    	android:typeface="monospace"/>
+
+    <TextView
+			android:id="@+id/divider1"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#dddddd"
+			android:layout_below="@+id/tv_new_func" />
+    
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/divider1"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="16dp"
+    	android:orientation="vertical" >
+
+        <TextView
+        	android:id="@+id/tv_function1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="" />
+
+        <ImageView
+        	android:id="@+id/iv_function_step1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:src="@drawable/func_es_link" />
+        
+        <ImageView
+        	android:id="@+id/iv_function_step2"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_gravity="center"
+        	android:src="@drawable/func_easylink_config"
+        	android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/welcome_page_bg" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    
+    <TextView 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:gravity="center" 
+        android:text="\n添加设备  一键搞定" 
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="75dp"
+        android:textSize="26sp"
+        android:textColor="#dddddd" 
+        />
+</RelativeLayout>

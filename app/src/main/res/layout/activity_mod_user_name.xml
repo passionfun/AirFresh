@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.ModUserNameActivity" >
+
+   <com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+    	android:id="@+id/titleBar_modify_username"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content">
+   </com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+    <EditText
+    	android:id="@+id/et_new_username"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/titleBar_modify_username"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="16dp"
+    	android:layout_marginLeft="16dp"
+    	android:layout_marginRight="16dp"
+    	android:background="@drawable/suggest_input"
+    	android:hint="@string/new_username"
+    	android:singleLine="true"/>
+    <Button
+		android:id="@+id/btn_uname"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginLeft="22dp"
+		android:layout_marginRight="22dp"
+		android:text="@string/btn_confirm"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/et_new_username"
+		android:typeface="monospace"
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:textStyle="bold"
+		android:background="@drawable/background_button_style4" />
+
+</RelativeLayout>

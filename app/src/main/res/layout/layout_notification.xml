@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="#a5a5a5" >
+
+    <ImageView
+    	android:id="@+id/iv_noti_icon"
+    	android:layout_width="32dp"
+    	android:layout_height="32dp"
+    	android:layout_alignParentLeft="true"
+    	android:layout_marginLeft="5dp"
+    	android:layout_marginTop="5dp"
+    	android:layout_alignParentTop="true"
+    	android:src="@drawable/bonfeel_icon" />
+
+    <TextView
+    	android:id="@+id/tv_noti_title"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginLeft="15dp"
+    	android:layout_marginTop="15dp"
+    	android:layout_toRightOf="@+id/iv_noti_icon"
+    	android:text="0%" 
+    	android:textColor="#ffffff"/>
+    
+    <ProgressBar 
+    	android:id="@+id/pb_noti_progress"
+    	android:layout_width="match_parent"
+    	android:layout_height="6dp"
+    	style="@android:style/Widget.ProgressBar.Horizontal"
+    	android:max="100"
+    	android:layout_below="@id/iv_noti_icon"
+    	android:layout_marginTop="4dp"/>
+    
+    <TextView
+    	android:id="@+id/tv_empty"
+    	android:layout_width="wrap_content"
+    	android:layout_height="4dp"
+    	android:layout_below="@+id/pb_noti_progress"
+    	android:textColor="#ffffff"/>
+
+</RelativeLayout>

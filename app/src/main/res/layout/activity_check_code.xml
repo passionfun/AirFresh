@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.activity.CheckCodeActivity" >
+
+	<com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar
+		android:id="@+id/titleBar_checkcode"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true">
+	</com.example.bonfeel.perfumediffuser_beifen_chineseappanv311.custom.TitleBar>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/titleBar_checkcode"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="20dp"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/tv_tips"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:text="@string/check_code_tips" />
+
+		<EditText
+			android:id="@+id/et_check_code"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:ems="6"
+			android:inputType="number" >
+
+			<requestFocus />
+		</EditText>
+
+		<Button
+			android:id="@+id/btn_check"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:text="Button" />
+
+	</LinearLayout>
+
+	
+
+</RelativeLayout>
